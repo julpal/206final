@@ -69,9 +69,6 @@ print(str(not_many) + " restaurants in Ann Arbor have less than 100 reviews.")
 
 
 
-# Fixing random state for reproducibility
-np.random.seed(19680801)
-
 
 plt.rcdefaults()
 fig, ax = plt.subplots()
@@ -98,14 +95,12 @@ ax.barh(y_pos, restaurants, color=('red', 'green', 'yellow', 'blue'))
 plt.show()
 
 
-# Fixing random state for reproducibility
-np.random.seed(19680801)
+
 
 
 plt.rcdefaults()
 fig, ax = plt.subplots()
 
-# Example data
 number_reviews = ('<100', '100-500', '<500')
 y_pos = np.arange(len(number_reviews))
 restaurants = (not_many, some_reviews, many_reviews)
@@ -146,14 +141,5 @@ with open('spotify_calculations.txt', 'w') as f:
     f.write('There are '+ str(count4) + ' 4 star restaurants in Ann Arbor')
     f.write('There are '+ str(count45) + ' 4.5 star restaurants in Ann Arbor')
     f.write('\n\n')
-
-
-
-
-
-
-
-
-
 
 
