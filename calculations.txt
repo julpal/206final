@@ -1,0 +1,288 @@
+Top
+Name, Popularity, Tempo
+All I Want for Christmas Is You,93,150
+Santa Tell Me,90,191
+Rockin' Around The Christmas Tree,88,67
+It's the Most Wonderful Time of the Year,87,202
+Mistletoe,87,161
+It's Beginning to Look a Lot like Christmas,86,94
+Last Christmas - Remastered,85,106
+Have Yourself A Merry Little Christmas,84,75
+White Christmas,83,130
+The Christmas Song (Merry Christmas To You),83,78
+Let It Snow! Let It Snow! Let It Snow!,83,134
+Christmas (Baby Please Come Home),82,127
+Holly Jolly Christmas,82,151
+Do They Know It's Christmas? - 1984 Version,82,115
+Blue Christmas,81,94
+Like It's Christmas,81,146
+Average Tempo for Top 15 Songs: 134.73333333333332
+
+Bottom
+Name, Popularity, Tempo
+Mistletoe,0,161
+Every Holiday,56,124
+Mistletoe - Recorded at Electric Lady Studios NYC.,59,79
+Roman Holiday,60,74
+Coldest Winter,61,83
+Holiday,61,117
+Dear Winter,63,94
+Winter Wonderland,63,145
+Winter Blues,63,131
+White Winter Hymnal,63,126
+Holiday / Boulevard of Broken Dreams,63,167
+Underneath The Mistletoe,63,123
+Fa La La,64,94
+A Winter's Ball,65,131
+Angels We Have Heard on High,65,77
+White Winter Hymnal,66,124
+Average Tempo for Bottom 15 Songs: 123.33333333333333
+
+Ratings
+Rating, Count
+4.5,36
+4.5,36
+4,51
+4.5,36
+4,51
+4,51
+4,51
+4.5,36
+3.5,36
+4.5,36
+4.5,36
+4.5,36
+4.5,36
+4.5,36
+4.5,36
+4,51
+3.5,51
+4.5,36
+4.5,36
+4.5,36
+4,51
+4,51
+4,51
+4,51
+4.5,36
+4,51
+4,51
+4.5,36
+4,51
+4,51
+4,51
+4,51
+4,51
+4,51
+4,51
+4.5,36
+4,51
+4,51
+4.5,36
+4.5,36
+4,51
+3,7
+3.5,7
+3.5,7
+3.5,7
+3.5,7
+3,7
+4.5,36
+3.5,36
+4,51
+3.5,51
+3.5,51
+3.5,51
+4.5,36
+4,51
+4.5,36
+3.5,36
+4.5,36
+3,7
+4,51
+3.5,51
+4,51
+3.5,51
+4,51
+4.5,36
+4.5,36
+4,51
+3.5,51
+4,51
+4,51
+4,51
+4.5,36
+3.5,36
+3,7
+3,7
+3.5,7
+4,51
+3.5,51
+4,51
+3,7
+4,51
+4,51
+5,51
+4.5,36
+4.5,36
+4,51
+4,51
+3.5,51
+5,51
+4.5,36
+3.5,36
+4,51
+4,51
+4,51
+4,51
+3.5,51
+5,51
+3.5,51
+4,51
+4.5,36
+4.5,36
+4.5,36
+4.5,36
+5,36
+4,51
+4,51
+4,51
+4,51
+3.5,51
+4,51
+4.5,36
+4.5,36
+4,51
+4,51
+4,51
+4.5,36
+4.5,36
+4,51
+3,7
+4,51
+
+
+Numner of Reviews
+Review Count, Review Amount
+470,some reviews
+51,not many reviews
+203,some reviews
+162,some reviews
+182,some reviews
+141,some reviews
+57,not many reviews
+77,not many reviews
+253,some reviews
+88,not many reviews
+128,some reviews
+63,not many reviews
+162,some reviews
+308,some reviews
+319,some reviews
+33,not many reviews
+258,some reviews
+177,some reviews
+1681,many reviews
+67,not many reviews
+367,some reviews
+707,many reviews
+53,not many reviews
+153,some reviews
+251,some reviews
+54,not many reviews
+180,some reviews
+11,not many reviews
+57,not many reviews
+429,some reviews
+166,some reviews
+163,some reviews
+196,some reviews
+358,some reviews
+187,some reviews
+120,some reviews
+208,some reviews
+52,not many reviews
+114,some reviews
+209,some reviews
+760,many reviews
+292,some reviews
+191,some reviews
+360,some reviews
+327,some reviews
+107,some reviews
+112,some reviews
+300,some reviews
+259,some reviews
+137,some reviews
+212,some reviews
+272,some reviews
+148,some reviews
+76,not many reviews
+1076,many reviews
+37,not many reviews
+412,some reviews
+48,not many reviews
+97,not many reviews
+424,some reviews
+9,not many reviews
+349,some reviews
+219,some reviews
+228,some reviews
+392,some reviews
+322,some reviews
+72,not many reviews
+730,many reviews
+293,some reviews
+1076,many reviews
+2,not many reviews
+162,some reviews
+86,not many reviews
+19,not many reviews
+279,some reviews
+334,some reviews
+206,some reviews
+30,not many reviews
+78,not many reviews
+202,some reviews
+233,some reviews
+60,not many reviews
+10,not many reviews
+226,some reviews
+81,not many reviews
+86,not many reviews
+27,not many reviews
+93,not many reviews
+20,not many reviews
+92,not many reviews
+426,some reviews
+153,some reviews
+890,many reviews
+219,some reviews
+106,some reviews
+77,not many reviews
+1,not many reviews
+107,some reviews
+29,not many reviews
+34,not many reviews
+226,some reviews
+162,some reviews
+162,some reviews
+5,not many reviews
+106,some reviews
+78,not many reviews
+890,many reviews
+1076,many reviews
+1149,many reviews
+201,some reviews
+34,not many reviews
+470,some reviews
+227,some reviews
+117,some reviews
+188,some reviews
+77,not many reviews
+1681,many reviews
+241,some reviews
+19,not many reviews
+63,not many reviews
+
+

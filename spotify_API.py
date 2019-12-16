@@ -27,22 +27,22 @@ sp = spotipy.Spotify(auth=token)
 conn = sqlite3.connect('final_project.sqlite')
 curr = conn.cursor()
 
-# creates table for tracks in database. Comment out after first run of code.
-curr.execute("""CREATE TABLE tracks(
-            track text,
-            uri text,
-            album_name text,
-            album_release_date text,
-            artist text,
-            popularity integer
-            ) """)
+# # creates table for tracks in database. Comment out after first run of code.
+# curr.execute("""CREATE TABLE tracks(
+#             track text,
+#             uri text unique,
+#             album_name text,
+#             album_release_date text,
+#             artist text,
+#             popularity integer
+#             ) """)
 
-#creates table for tracks audio features. Comment out after first run of code.
-curr.execute("""CREATE TABLE audio(
-            uri text,
-            danceability integer,
-            tempo integer
-            ) """)
+# #creates table for tracks audio features. Comment out after first run of code.
+# curr.execute("""CREATE TABLE audio(
+#             uri text unique,
+#             danceability integer,
+#             tempo integer
+#             ) """)
 
 
 #create an empty list to store items to be stored to database
@@ -51,9 +51,9 @@ results_data_list = []
 #creates empty list to store uris in
 uri_list = []
 
-#search queries: 'christmas', 'winter', 'holiday', 'mistletoe', 'santa'
+#search queries: 'christmas', 'winter', 'holiday', 'mistletoe', 'santa', 'xmas'
 #get search results for tracks with each search query in the United States. Limits results to 20. Change q parameter each time you run code.
-tracks_results = sp.search('christmas', type='track', limit=20, market='US')
+tracks_results = sp.search('xmas', type='track', limit=20, market='US')
 
 #pull pieces of data from API json results for each searched track and appends them in tuple form to results_data_list
 for track_dictionary in tracks_results['tracks']['items']:
@@ -81,11 +81,11 @@ for uri in uri_list:
 
 #loop through tracks data in results_data_list and add to tracks table in database
 for tup in results_data_list:
-    curr.execute("INSERT INTO tracks VALUES (?, ?, ?, ?, ?, ?)", tup)
+    curr.execute("INSERT OR REPLACE INTO tracks VALUES (?, ?, ?, ?, ?, ?)", tup)
 
 #loop through tracks data in audio_features_data and add to audio table in database
 for tup in audio_features_data:
-    curr.execute("INSERT INTO audio VALUES (?, ?, ?)", tup)
+    curr.execute("INSERT OR REPLACE INTO audio VALUES (?, ?, ?)", tup)
 
 #saves changes to database
 conn.commit()
