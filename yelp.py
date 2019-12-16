@@ -11,7 +11,8 @@ headers = {'Authorization': 'Bearer %s' % api_key,}
 
 #change the final 'term' each time you run the code to a cuisine of your choice
 #limited to 20 results each time
-params = {'is_closed': 'false', 'location': 'Ann Arbor', 'limit': 20, 'term': 'restaurants', 'term': 'american'}
+#queries used: bars, asian, vegetarian, waffles, italian, american
+params = {'is_closed': 'false', 'location': 'Ann Arbor', 'limit': 20, 'term': 'restaurants', 'term': 'bars'}
 
 #request to the API
 req = requests.get(url, params=params, headers=headers)
@@ -33,11 +34,11 @@ businesses = parsed["businesses"]
 
 
 #set up database
-conn = sqlite3.connect('final_project.sqlite')
+conn = sqlite3.connect('new_yelp.sqlite')
 curr = conn.cursor()
 
 
-# #creates table
+#creates table
 
 # curr.execute("""CREATE TABLE restaurants(
 #     name text unique,
@@ -59,12 +60,12 @@ for restaurant in businesses:
 
 #inserts data into table
 for tup in results:
-    curr.execute("INSERT OR REPLACE INTO restaurants VALUES (?,?,?)", tup)
+    curr.execute("INSERT INTO restaurants VALUES (?,?,?)", tup)
 
 
 
 
-# #creates table
+#creates table
 
 # curr.execute("""CREATE TABLE reviews(
 #     name text unique,
@@ -88,8 +89,13 @@ for restaurant in businesses:
 
 #inserts data into table
 for tup2 in results2:
-    curr.execute("INSERT OR REPLACE INTO reviews VALUES (?,?,?)", tup2)
+    curr.execute("INSERT INTO reviews VALUES (?,?,?)", tup2)
 
 
 conn.commit()
 conn.close
+
+
+
+
+
