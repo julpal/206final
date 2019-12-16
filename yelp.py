@@ -40,7 +40,7 @@ curr = conn.cursor()
 #creates table
 
 # curr.execute("""CREATE TABLE restaurants(
-#     name text,
+#     name text unique,
 #     rating integer,
 #     address text
 # )""")
@@ -67,7 +67,7 @@ for tup in results:
 #creates table
 
 # curr.execute("""CREATE TABLE reviews(
-#     name text,
+#     name text unique,
 #     review_count integer,
 #     phone text
 # )""")
