@@ -75,5 +75,92 @@ with open('spotify_calculations.txt', 'w') as f:
 
 
 
+
+#YELP
+
+
+#CALCULATIONS
+
+#finds number of restaurants with the respective ratings
+curr.execute("SELECT rating FROM restaurants")
+result = curr.fetchall()
+
+count3 = 0
+count35 = 0
+count4 = 0
+count45 = 0
+for x in result:
+    if x[0] == 3:
+        count3 += 1
+    if x[0] == 3.5:
+        count35 += 1
+    if x[0] == 4:
+        count4 +=1
+    if x[0] == 4.5:
+        count45 +=1
+
+
+
+#finds whether restaurants have many, some, or not many reviews
+curr.execute("SELECT review_count FROM reviews")
+result2 = curr.fetchall()
+
+many_reviews = 0
+some_reviews = 0
+not_many = 0
+for x in result2:
+    if x[0] > 500:
+        many_reviews += 1
+    if x[0] >= 100 and x[0] < 500:
+        some_reviews += 1
+    if x[0] < 100:
+        not_many +=1
+
+
+
+
+#writes calculations out to a file
+with open('spotify_calculations.txt', 'w') as f:  
+    f.write('Ratings\n')
+    f.write('Rating, Count\n')
+    for x in results:
+        rating = x[0]
+            if x[0] == 3:
+                count = count3
+            if x[0] == 3.3:
+                count = count35
+            if x[0] == 4:
+                count = count4
+            if x[0] == 4.5:
+                count = count45
+        f.write('{},{}\n'.format(rating, count))
+    f.write('\n\n')
+
+
+with open('spotify_calculations.txt', 'w') as f:  
+    f.write('Numner of Reviews\n')
+    f.write('Review Count, Review Amount\n')
+    for x in results2:
+        review_count = x[0]
+        if x[0] > 500:
+            reviews = 'many reviews'
+        if x[0] >= 100 and x[0] < 500:
+            reviews = 'some reviews'
+        if x[0] < 100:
+            reviews = 'not many reviews'
+        f.write('{},{}\n'.format(review count, reviews))
+     f.write('\n\n')
+
+
+
+
 conn.commit()
 conn.close()
+
+
+
+
+    # f.write('There are '+ str(count3) + ' 3 star restaurants in Ann Arbor')
+    # f.write('There are '+ str(count35) + ' 3.5 star restaurants in Ann Arbor')
+    # f.write('There are '+ str(count4) + ' 4 star restaurants in Ann Arbor')
+    # f.write('There are '+ str(count45) + ' 4.5 star restaurants in Ann Arbor')
